@@ -14,11 +14,10 @@ public class Main {
 
         // Клиент нажимает на кнопку "Зарезервировать", возбуждается событие,
         // вызывается метод reservationTable()
-        Date date = new Date();
-        bookingView.reservationTable(date, 1103, "Станислав");
+        bookingView.reservationTable(new Date(), 1103, "Станислав");
 
-        bookingView.reservationTable(date, 102, "Станислав");
+        bookingView.reservationTable(new Date(), 102, "Станислав");
 
-        bookingView.changeReservationTable(9001, date, 102, "Станислав");
+        bookingView.changeReservationTable(9001, new Date(), 102, "Станислав");
     }
 }
